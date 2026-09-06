@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+venv/
+.venv/
+py_env/
+airflow-venv/
+
+# Environment variables / secrets
+.env
+*.env
+
+# macOS
+.DS_Store
+
+# VS Code
+.vscode/
+
+# Airflow / runtime files
+logs/
+*.log
+
+# Temporary / cache files
+.pytest_cache/
+.cache/
