@@ -17,7 +17,7 @@ def extract_hpa05():
     # Raise an error if the API request was unsuccessful
     response_api.raise_for_status()
 
-    print(response_api.status_code)
+    # print(response_api.status_code)
     print("HPA05 API extraction successful.")
 
     data_api = response_api.json() #Inspect HPA05 structure
@@ -41,8 +41,8 @@ def extract_hpa05():
 # -----------------------------
 
 def transform_hpa05(data_api):
-    print(data_api["size"])
-    print(len(data_api["value"]))
+    # print(data_api["size"])
+    # print(len(data_api["value"]))
 
     #Assigning values to variables
     statistics = data_api["dimension"]["STATISTIC"]["category"]["index"]
@@ -108,7 +108,7 @@ def load_hpa05(rows):
             user="root",
             password=mysql_password
     )
-    print(connection.is_connected())
+    # print(connection.is_connected())
 
     # Create cursor for executing SQL commands
     cursor = connection.cursor()

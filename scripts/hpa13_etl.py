@@ -45,8 +45,8 @@ def extract_hpa13():
 
 # >>> NEW FUNCTION START <<<
 def transform_hpa13(data_api):
-    print(data_api["size"])
-    print(len(data_api["value"]))
+    # print(data_api["size"])
+    # print(len(data_api["value"]))
 
     #Assigning values to variables
     # Source dimension codes and labels from the API data
@@ -187,10 +187,10 @@ def load_hpa13(rows):
 def main():
 
     data_api = extract_hpa13()
-    print(data_api["id"])
-    #rows = transform_hpa13(data_api)
+    
+    rows = transform_hpa13(data_api)
 
-    #load_hpa13(rows)
+    load_hpa13(rows)
 
 # >>> NEW FUNCTION END <<<
 
